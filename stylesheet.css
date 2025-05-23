@@ -61,7 +61,7 @@ h1{
 }
 h2{
  text-align: center;
-  font-size: 70px;
+  font-size: 60px;
   color: var(--lysegrå);
   font-family: var(--overskrifter) 
 }
@@ -130,7 +130,7 @@ p{
 
 
 /*anmeldelser styling*/
-.anmeldelser {
+.trustpilot-sektion {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -139,7 +139,7 @@ p{
   text-align: center;
 }
 
-.anmeldelse {
+.trustpilot-anmeldelse {
   background: none; 
   box-shadow: none; 
   border: none;     
@@ -151,12 +151,19 @@ p{
 }
 
 
+
+
+
+
+
+
 /*PROGRAM STYLING*/
+
 #program {
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem; /*vi fjerner padding i bunden så vi kan ligge en hvid svg der hjælper med en årgang ind til næste sektion*/
   border-radius: 8px;
   max-width: 1000px;
-  margin: 2rem auto;
+  margin: 2rem auto 0 auto; /*Vi bevarer auto til siderne for men sætter margin-bottom til 0 for at fjerne mellemrummet under*/
   
 }
 
@@ -187,7 +194,7 @@ p{
 }
 
 /* Label i øverste højre hjørne, roteret 45 grader */
-.label {
+.gratis-prøve {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -201,4 +208,31 @@ p{
   background: #448239;
 }
 
+.gratis-prøve-knap { /*Her kopierer vi mange af de samme elementer fra CTA knappen på forsiden */
+  display: flex;               
+  justify-content: center;    
+  align-items: center;        
+  margin: 2rem auto; 
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #448239, #45d4ff);
+  color: var(--hvid);
+  font-family: var(--overskrifter);
+  font-size: 35px;
+  border-radius: 8px;
+  width: 360px;
+  height: 70px;
+  text-decoration: none;
+}
 
+
+
+
+/*ANMELDELSER STYLING*/
+
+#anmeldelser{
+  background-color: var(--hvid);
+}
+
+.anmeldelser-overskrift{
+  color: var(--sort);
+}
