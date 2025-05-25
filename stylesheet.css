@@ -314,3 +314,20 @@ p{
   height: 70px;
   text-decoration: none;
 }
+
+.sloped-white-bg {
+  background-color: var(--hvid);
+  clip-path: polygon(0 14vw, 100% 0, 100% 100%, 0 100%); /* Skaber en skrå baggrund */
+  padding: 5vw 0; /* Add padding to ensure content is not clipped */
+  position: relative;
+  z-index: 1;
+  ;
+}
+
+.ansvarsfraskrivelse {
+  background-color: var(--mørkegrå);
+  color: var(--hvid);
+  padding: 1rem;
+  font-size: 16px;
+  text-align: center;
+}
