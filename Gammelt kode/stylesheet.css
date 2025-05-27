@@ -1,0 +1,316 @@
+
+
+/*Stylesheet*/
+
+
+
+
+/*Variabler/var*/
+
+:root{ /*Vi bruger "root" for at kunne ændre farven og typografien på alt i vores html. Vi laver altså et par faste variabler vi altid kan refere til*/
+    --blå: #45CAFF;
+    --pink: #FF1B6B;
+    --sort: #000000;
+    --hvid: #FFFFFF;
+    --mørkegrå: #2B2B2B;
+    --lysegrå: #9F9F9F;
+    
+    --overskrifter: "Bebas Neue", sans-serif;
+    --paragraf: "inter", sans-serif;
+}
+
+/*BROWSER RESET*/
+
+/*Vi bruger "CSS reset", da browseren i forvejen har lavet sine egne styles, placeringer osv. til vores website. Dette resetter vi.*/
+* { /*Vi bruger dette tegn, da det fjerner alle elementer*/
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*BASE STYLES*/
+
+body{
+  background: var(--sort);
+   overflow-x: hidden; /*Vi skjuler horisontale scrollbars så brugeren ikke kan scrolle til siden*/
+}
+
+.cta-knap {
+  display: inline-flex;    /* Flex container, så vi kan centrere teksten */
+  justify-content: center;    
+  align-items: center;        
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #ff005d, #45d4ff);
+  color: white;
+  text-decoration: none;
+  font-family: var(--overskrifter);
+  font-size: 35px;
+  border-radius: 8px;
+  margin-top: 2rem;
+  width: 360px;
+  height: 70px;
+}
+
+h1{
+  text-align: center;
+  font-size: 100px;
+  color: var(--hvid);
+  font-family: var(--overskrifter)
+}
+h2{
+ text-align: center;
+  font-size: 60px;
+  color: var(--lysegrå);
+  font-family: var(--overskrifter) 
+}
+h3{
+  font-size: 50px;
+  color: var(--hvid);
+  font-family: var(--overskrifter) 
+}
+h4{
+   text-align: center;
+  font-size: 30px;
+  color: var(--hvid);
+  font-family: var(--overskrifter) 
+}
+p{
+  font-size: 20px;
+  color: var(--hvid);
+  font-family: var(--paragraf) 
+}
+
+
+
+
+
+/*FORSIDE STYLING*/
+
+
+#forside{
+     background-image: url(Billeder/forside-baggrund.jpg); /* Gradient baggrund */
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     text-align: center;
+}
+
+.forside-overskrift{
+  padding-top: 18px;
+}
+.forside-paragraf{
+  margin-top: -30px;
+  padding-bottom: 20px;
+}
+
+ /*Intro-video style*/
+    .intro-video {
+      width: 80%;
+      max-width: 560px;
+      height: 315px;
+      margin: 1rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+/*unmute knap styling*/
+#unmute-knap {
+  position: absolute;
+  background: #000000;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/*anmeldelser styling*/
+.trustpilot-sektion {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  text-align: center;
+}
+
+.trustpilot-anmeldelse {
+  background: none; 
+  box-shadow: none; 
+  border: none;     
+  color: var(--lysegrå); 
+  font-family: var(--paragraf);
+  max-width: 300px;
+  padding: 1rem;
+  flex: 1 1 250px;
+}
+
+
+
+
+
+
+
+/*PROGRAM STYLING*/
+
+#program {
+  padding: 2rem 2rem 0 2rem; /*vi fjerner padding i bunden så vi kan ligge en hvid svg der hjælper med en årgang ind til næste sektion*/
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: 2rem auto 0 auto; /*Vi bevarer auto til siderne for men sætter margin-bottom til 0 for at fjerne mellemrummet under*/
+}
+
+.program-boks {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #2b2b2b;
+  margin-bottom: 2rem;
+}
+
+.preview-billede {
+  width: 40%;
+  max-width: 300px;
+  height: auto;
+}
+
+.dage {
+  margin-bottom: -8px;
+  text-align: left;
+  font-size: 40px;
+  color: var(--lysegrå);
+  font-family: var(--overskrifter);
+}
+
+/* Label i øverste højre hjørne, roteret 45 grader */
+.gratis-prøve {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform-origin: top right;
+  background: black;
+  font-size: 1.5rem;
+  font-family: var(--overskrifter);
+  color: var(--hvid);
+  padding: 0.25rem 0.75rem;
+  transform: rotate(45deg) translate(45%, -15%);
+  background: #448239;
+}
+
+.gratis-prøve-knap { /*Her kopierer vi mange af de samme elementer fra CTA knappen på forsiden */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #448239, #45d4ff);
+  color: var(--hvid);
+  font-family: var(--overskrifter);
+  font-size: 35px;
+  border-radius: 8px;
+  width: 360px;
+  height: 70px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/*ANMELDELSER STYLING*/
+
+#anmeldelser {
+  background-color: var(--hvid);
+}
+
+.anmeldelser-overskrift {
+  color: var(--sort);
+}
+
+/* Carousels styling */
+.scroll-carousel-container { /* Vi sætter overflow: hidden på container så billeder ikke stikker ud.*/
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--hvid);
+  padding: 20px 0;
+}
+
+
+.scroll-carousel-track {
+  display: flex;
+  width: max-content;
+}
+
+
+.scroll-carousel-track img {
+  height: 250px;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 12px; 
+}
+
+.scroll-carousel-container.carousel-middle .scroll-carousel-track img {
+  height: 450px; 
+  }
+
+/* Animation til scroll venstre */
+.scroll-carousel-container.carousel-left .scroll-carousel-track {
+  animation: scroll-left 40s linear infinite;
+}
+
+/* Animation til scroll højre */
+.scroll-carousel-container.carousel-right .scroll-carousel-track {
+  animation: scroll-right 40s linear infinite;
+}
+
+/* Animation til scroll */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right { /*Vi ændrer left til right*/
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Her sørger vi for at tracken ikke pauser ved hover */
+.scroll-carousel-container:hover .scroll-carousel-track {
+  animation-play-state: running;
+}
+
+.cta-knap2 { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #ff005d, #45d4ff);
+  color: var(--hvid);
+  font-family: var(--overskrifter);
+  font-size: 35px;
+  border-radius: 8px;
+  width: 360px;
+  height: 70px;
+  text-decoration: none;
+}
