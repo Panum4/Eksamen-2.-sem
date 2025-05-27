@@ -1,2 +1,2 @@
-# Eksamen-2.-sem
-Velkommen. Her deles vores HTML/CSS/JavaScript kodning
+7dagesproducer mappen indeholder vores afleveringskode.
+Gammelt kode mappen indeholder processkode, men er ikke relevant for vores upload
